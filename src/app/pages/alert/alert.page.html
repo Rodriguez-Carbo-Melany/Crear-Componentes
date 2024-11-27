@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <!-- Botón Regresar -->
+      <ion-back-button defaultHref="/" text="Regresar" color="primary"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Mostrar Imagen</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <!-- Botón para mostrar/ocultar la imagen -->
+  <ion-button (click)="toggleImage()" expand="block">
+    Mostrar Imagen
+  </ion-button>
+
+  <!-- Imagen que se muestra cuando showImage es true -->
+  <div *ngIf="showImage" style="text-align: center; margin-top: 20px;">
+    <img
+      src="https://c0.klipartz.com/pngpicture/168/827/gratis-png-ilustracion-de-icono-femenino-iconos-de-computadora-perfil-de-usuario-avatar-perfil-transparente.png"
+      alt="Avatar" style="width: 200px; height: 200px; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" />
+  </div>
+</ion-content>

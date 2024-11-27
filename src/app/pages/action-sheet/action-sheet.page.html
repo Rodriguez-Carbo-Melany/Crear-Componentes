@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <!-- Botón Regresar -->
+      <ion-back-button defaultHref="/" text="Regresar" color="primary"></ion-back-button>
+    </ion-buttons>
+    <ion-title>ion-button</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding ion-text-center">
+  <!-- Botón Default -->
+  <ion-button class="ion-margin">
+    Default
+  </ion-button>
+
+  <!-- Botón con color 'clear' -->
+  <ion-button fill="clear" class="ion-margin">
+    Clear
+  </ion-button>
+
+  <!-- Botón pequeño -->
+  <ion-button size="small" class="ion-margin">
+    Small
+  </ion-button>
+
+  <!-- Botón con ícono de Apple -->
+  <ion-button class="ion-margin">
+    <ion-icon slot="icon-only" ios="logo-apple" md="settings-sharp"></ion-icon>
+  </ion-button>
+
+  <!-- Botón con color 'light' -->
+  <ion-button color="light" class="ion-margin">
+    Light
+  </ion-button>
+</ion-content>
